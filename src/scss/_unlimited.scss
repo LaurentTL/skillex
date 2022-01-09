@@ -20,11 +20,6 @@
             justify-content: space-between;
             margin-top: 3rem;
             font-size: clamp(0.8rem, 0.9rem, 1rem);
-            overflow-x: scroll;
-
-            &::-webkit-scrollbar {
-                display: none;
-            }
         }
     }
 
@@ -39,7 +34,6 @@
         .card {
 
             flex: 1;
-            min-width: 200px;
             display: flex;
             flex-direction: column;
             overflow: hidden;
@@ -121,6 +115,7 @@
 
             .links {
                 width: 100%;
+                gap: 0.9rem;
             }
         }
 
@@ -129,8 +124,9 @@
             width: 100%;
 
             .card {
-                width: 100px;
-                height: 200px;
+                width: 300px;
+                height: 400px;
+                flex: none;
             }
         }
     }

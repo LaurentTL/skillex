@@ -40,13 +40,12 @@ body {
 
 @media screen and (max-width: 1440px) {
     
+    body {
+        overscroll-behavior-x: none;
+        overflow-x: hidden;
+    }
+
     .container {
         width: 90%;
-    }
-}
-@media screen and (max-width: 400px) {
-    
-    body {
-        overflow-x: hidden;
     }
 }

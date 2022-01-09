@@ -1,0 +1,197 @@
+@import '_variables.scss';
+
+.menu-wrapper {
+    width: 100vw;
+    height: 5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.menu {
+
+    width: 1260px;
+    height: 100vh;
+    display: flex;
+    margin-top: 1rem;
+
+    &__left {
+
+        margin-right: 7rem;
+        
+        h1 {
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            font-family: 'poppins-SB';
+            position: relative;
+        }
+
+        h1:after {
+            content: '';
+            background-color: $green;
+            width: 0.5rem;
+            height: 0.5rem;
+            display: block;
+            position: absolute;
+            top: 60%;
+            right: -13%;
+
+        }
+    }
+
+    &__right {
+
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .list {
+            width: 25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                position: relative;
+                cursor: pointer;
+            }
+
+            a::after {
+                content: '';
+                display: block;
+                width: 90%;
+                height: 0.5rem;
+                background-color: $green;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                z-index: -1;
+                transform: translateX(-50%) scaleY(0);
+                transform-origin: bottom;
+                transition: 200ms;
+            }
+
+            a:hover::after, a:focus::after {
+                transform: translateX(-50%) scaleY(1);
+            }
+        }
+
+        .btn-wrap {
+
+            width: 14rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .btn-trial {
+
+                color: white;
+                background-color: $black;
+                padding: 0.6rem 2.5rem 0.5rem;
+                border-radius: 50px;
+
+            }
+        }
+
+        &__menu-burger {
+            display: none;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1440px) {
+    .menu {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .menu-wrapper {
+
+        .menu {
+    
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            // width: 90%;
+    
+            &__left {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 4rem;
+            }
+            &__right {
+        
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                flex-direction: column;
+                height: 100vh !important;
+                width: 100%;
+                
+                .list {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    
+                    a {
+                        width: 100%;
+                        height: 3rem;
+                        margin-top: 2rem;
+                        align-self: flex-start;
+                        position: relative;
+                    }
+    
+                    a::after {
+                        content: '';
+                        background-color: $black;
+                        width: 100%;
+                        height: 1px;
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        transform: translateX(-50%) scaleY(1);
+                    }
+                }
+        
+            }
+            .menu-burger  {
+                display: block;
+                width: 1rem;
+                height: 2px;
+                background-color: $black;
+                border-radius: 50px;
+                position: relative;
+        
+            }
+        
+            .menu-burger:before {
+                content: '';
+                width: 1rem;
+                height: 2px;
+                background-color: $black;
+                border-radius: 50px;
+                display: block;
+                position: absolute;
+                bottom: 0.33rem; 
+            }
+        
+            .menu-burger:after {
+                content: '';
+                width: 1rem;
+                height: 2px;
+                background-color: $black;
+                border-radius: 50px;
+                display: block;
+                position: absolute;
+                bottom: -0.33rem; 
+            }
+        }
+    }
+}

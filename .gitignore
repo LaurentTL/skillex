@@ -1,0 +1,6 @@
+/dist/
+/.cache
+package-lock.json
+.DS_Store.env*
+node_modules
+/.env

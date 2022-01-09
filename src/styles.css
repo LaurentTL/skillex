@@ -642,6 +642,9 @@ body {
 
 .unlimited {
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-top: 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -655,6 +658,9 @@ body {
 
 .unlimited__menu {
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -691,7 +697,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 50vh;
+  height: 85vh;
   gap: 50px;
 }
 
@@ -791,7 +797,8 @@ body {
     display: none;
   }
   .unlimited__menu .links {
-    width: 100%;
+    max-width: 40rem;
+    min-width: 32rem;
     gap: 0.9rem;
   }
   .unlimited__cards {
@@ -805,6 +812,13 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .links {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 /*# sourceMappingURL=styles.css.map */

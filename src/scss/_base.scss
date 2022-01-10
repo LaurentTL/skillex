@@ -18,6 +18,8 @@ body {
 .container {
     width: 1260px;
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .h {

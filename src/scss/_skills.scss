@@ -1,0 +1,59 @@
+.skills {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    &__left {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+
+        h2 {
+            text-align: start !important;
+            width: 33%;
+        }
+
+        .description {
+            
+            width: 33%;
+            margin-right: 10rem;
+            
+            p {
+                width: 100%;
+            }
+
+            .green {
+                background-color: $green;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 3rem;
+
+                .years {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+
+                    &::after {
+                        content: " ";
+                        width: 1px;
+                        height: 1rem;
+                        background-color: $black;
+                        
+                    }
+                }
+                
+                .types {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

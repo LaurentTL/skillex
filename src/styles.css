@@ -1059,7 +1059,7 @@ body {
   content: "";
   width: 1px;
   height: 3rem;
-  background-color: #1e1e2f;
+  border-left: dashed #1e1e2f 1px;
   position: absolute;
   bottom: -2.5rem;
   left: 25px;

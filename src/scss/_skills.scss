@@ -158,7 +158,8 @@
                     content: "";
                     width: 1px;
                     height: 3rem;
-                    background-color: $black;
+                    border-left: dashed $black 1px;
+                    // background-color: $black;
                     position: absolute;
                     bottom: -2.5rem;
                     left: 25px;

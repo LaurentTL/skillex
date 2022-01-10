@@ -11,6 +11,7 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 3rem;
+        z-index: 10;
 
         h2 {
             text-align: start !important;
@@ -24,7 +25,8 @@
             
             p {
                 width: 100%;
-                letter-spacing: 0.7;
+                font-size: 1.2rem;
+                letter-spacing: 0.5;
             }
 
             .green {
@@ -34,6 +36,7 @@
                 justify-content: center;
                 align-items: center;
                 height: 6rem;
+                margin-top: 4rem;
 
                 .years {
                     flex: 1;
@@ -101,6 +104,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: -6rem;
 
         &__list {
 
@@ -159,9 +163,8 @@
                     width: 1px;
                     height: 3rem;
                     border-left: dashed $black 1px;
-                    // background-color: $black;
                     position: absolute;
-                    bottom: -2.5rem;
+                    bottom: -3rem;
                     left: 25px;
                 }
             }
@@ -169,7 +172,7 @@
 
 
         &__video {
-            width: 700px;
+            width: 850px;
 
             video {
                 border-radius: 3rem;

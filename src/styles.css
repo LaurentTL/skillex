@@ -853,6 +853,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 3rem;
+  z-index: 10;
 }
 
 .skills__left h2 {
@@ -867,7 +868,8 @@ body {
 
 .skills__left .description p {
   width: 100%;
-  letter-spacing: 0.7;
+  font-size: 1.2rem;
+  letter-spacing: 0.5;
 }
 
 .skills__left .description .green {
@@ -883,6 +885,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 6rem;
+  margin-top: 4rem;
 }
 
 .skills__left .description .green .years {
@@ -983,6 +986,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: -6rem;
 }
 
 .skills__right__list {
@@ -1061,12 +1065,12 @@ body {
   height: 3rem;
   border-left: dashed #1e1e2f 1px;
   position: absolute;
-  bottom: -2.5rem;
+  bottom: -3rem;
   left: 25px;
 }
 
 .skills__right__video {
-  width: 700px;
+  width: 850px;
 }
 
 .skills__right__video video {

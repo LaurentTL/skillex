@@ -6,5 +6,47 @@
     &__top {
         display: flex;
         justify-content: space-between;
+
+        &__nav {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2rem 4rem;  
+
+        }
+    }
+
+    &__bottom {
+
+        border-top: solid 1px rgb(207, 207, 207);
+        margin: 2rem 0 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+        position: relative;
+
+        p {
+            padding-left: 4rem;
+        }
+
+        p::before {
+            content: "";
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background-color: $black;
+            position: absolute;
+            top: 2rem;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .social-list {
+
+            display: flex;
+            gap: 10px;
+        }
     }
 }

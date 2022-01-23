@@ -1,3 +1,5 @@
+@import '_variables';
+
 .customer-say {
 
     width: 100%;
@@ -59,15 +61,26 @@
     .slider-btns {
 
         display: flex;
+        gap: 24px;
         margin: 2rem 0 3rem;
 
         .left, .right {
+
             width: 60px;
             height: 60px;
+            border: 1px solid $bg-color;
+            border-radius: 50%;
 
             i {
                 color: grey;
             }
+
+        }
+
+        .left:hover, .right:hover {
+            
+            border-color: $border-grey;
+            transition: 200ms linear;
         }
     }
 }

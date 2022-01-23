@@ -1216,16 +1216,25 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 24px;
   margin: 2rem 0 3rem;
 }
 
 .customer-say .slider-btns .left, .customer-say .slider-btns .right {
   width: 60px;
   height: 60px;
+  border: 1px solid #f8f4f1;
+  border-radius: 50%;
 }
 
 .customer-say .slider-btns .left i, .customer-say .slider-btns .right i {
   color: grey;
+}
+
+.customer-say .slider-btns .left:hover, .customer-say .slider-btns .right:hover {
+  border-color: #cfcfcf;
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
 }
 
 .footer {

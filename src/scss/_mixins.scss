@@ -1,6 +1,7 @@
 // _________________ SEARCH INPUT WITH GREEN CORAL BTN _________________________
 
 @mixin search($width, $height, $margin-left-input) {
+
     display: flex;
     justify-content: space-between;
     height: $height;

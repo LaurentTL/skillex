@@ -1357,13 +1357,12 @@ body {
 }
 
 .footer__bottom p {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .footer__bottom .social-list {
-  line-height: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1390,6 +1389,14 @@ body {
 .footer__bottom .social-list li .fab {
   -webkit-transform: scale(1.5, 1.5);
           transform: scale(1.5, 1.5);
+}
+
+.footer__bottom .social-list li:hover {
+  border: 1px solid #1e1e2f;
+  background-color: #1e1e2f;
+  color: white;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
 }
 
 @media screen and (max-width: 780px) {

@@ -24,6 +24,10 @@
 
         &__join {
 
+            .join-title {
+                font-size: 1.5rem
+            }
+
             .search {
 
                 @include search(300px, 64px, 1.5rem);
@@ -44,28 +48,68 @@
         position: relative;
 
         p {
-            padding-left: 4rem;
-            line-height: 0;
+            height: fit-content;
         }
 
-        p::before {
-            content: "";
-            display: block;
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
-            background-color: $black;
-            position: absolute;
-            top: 3rem;
-            left: 0;
-            transform: translateY(-50%);
-        }
+        // p::before {
+        //     content: "";
+        //     display: block;
+        //     width: 3rem;
+        //     height: 3rem;
+        //     border-radius: 50%;
+        //     background-color: $black;
+        //     position: absolute;
+        //     top: 3rem;
+        //     left: 0;
+        //     transform: translateY(-50%);
+        // }
 
         .social-list {
 
             line-height: 0;
             display: flex;
-            gap: 10px;
+            gap: 2rem;
+
+            li {
+                
+                width: 3rem;
+                height: 3rem;
+                border: 1px solid $border-grey;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                .fab { 
+                    
+                    transform: scale(1.5,1.5);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .footer {
+
+        &__top {
+
+            flex-direction: column;
+            gap: 24px;
+            align-items:flex-start;
+
+            &__nav {
+                
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__bottom {
+
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 1.5rem;
         }
     }
 }

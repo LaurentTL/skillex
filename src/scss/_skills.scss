@@ -226,6 +226,15 @@
                 }
             }
         }
+
+        &__video {
+
+            width: 400px;
+
+            video {
+                border-radius: 1rem;
+            }
+        }
     }
 }
 

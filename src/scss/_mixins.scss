@@ -58,7 +58,7 @@
 
 @mixin hover-on-anchor($bottom-pos) {
 
-    a::after {
+    &::after {
         content: '';
         display: block;
         width: 90%;
@@ -73,7 +73,7 @@
         transition: 200ms;
     }
     
-    a:hover::after, a:focus::after {
+    &:hover::after, &:focus::after {
         transform: translateX(-50%) scaleY(1);
     }
 }

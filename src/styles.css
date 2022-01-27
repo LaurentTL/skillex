@@ -251,7 +251,7 @@ body {
   cursor: pointer;
 }
 
-.menu__right .list a a::after {
+.menu__right .list a::after {
   content: '';
   display: block;
   width: 90%;
@@ -269,7 +269,7 @@ body {
   transition: 200ms;
 }
 
-.menu__right .list a a:hover::after, .menu__right .list a a:focus::after {
+.menu__right .list a:hover::after, .menu__right .list a:focus::after {
   -webkit-transform: translateX(-50%) scaleY(1);
           transform: translateX(-50%) scaleY(1);
 }
@@ -1365,7 +1365,7 @@ body {
   cursor: pointer;
 }
 
-.footer__top__nav a::after {
+.footer__top__nav::after {
   content: '';
   display: block;
   width: 90%;
@@ -1383,7 +1383,7 @@ body {
   transition: 200ms;
 }
 
-.footer__top__nav a:hover::after, .footer__top__nav a:focus::after {
+.footer__top__nav:hover::after, .footer__top__nav:focus::after {
   -webkit-transform: translateX(-50%) scaleY(1);
           transform: translateX(-50%) scaleY(1);
 }

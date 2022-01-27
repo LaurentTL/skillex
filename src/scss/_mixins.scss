@@ -77,3 +77,31 @@
         transform: translateX(-50%) scaleY(1);
     }
 }
+
+// ____________________________________ HOVER EFFECT ON FREE TRIAL _____________________
+
+@mixin hover-on-free-trial {
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        background-color: $green;
+        transform-origin: bottom;
+        transition: 200ms;
+        border-radius: 50px;
+        transform: translateY(100%);
+        z-index: 50;
+    }
+    
+    &:hover::after {
+        
+        transform: translateY(0);
+    }
+
+    &:hover {
+        color: $black;
+    }
+}

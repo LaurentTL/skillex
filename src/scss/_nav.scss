@@ -56,24 +56,40 @@
             a {
                 position: relative;
                 cursor: pointer;
+
+                @include hover-on-anchor(0);
             }
-
-            @include hover-on-anchor(0);
+            
         }
-
+        
         .btn-wrap {
-
+            
             width: 14rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
-
+            
             .btn-trial {
 
+                width: 9rem;
+                height: 2.5rem;
                 color: white;
                 background-color: $black;
-                padding: 0.6rem 2.5rem 0.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 border-radius: 50px;
+                position: relative;
+                overflow: hidden;
+                
+
+                    span {
+                        position: absolute;
+                        z-index: 100;
+                    }
+
+                @include hover-on-free-trial;
+
 
             }
         }

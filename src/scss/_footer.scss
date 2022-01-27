@@ -24,9 +24,10 @@
                 width: fit-content;
                 position: relative;
                 cursor: pointer;
+                
+                @include hover-on-anchor(calc(2rem - 5px));
             }
 
-            @include hover-on-anchor(calc(2rem - 5px));
         }
 
         &__join {

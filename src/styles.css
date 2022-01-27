@@ -1365,7 +1365,7 @@ body {
   cursor: pointer;
 }
 
-.footer__top__nav::after {
+.footer__top__nav a::after {
   content: '';
   display: block;
   width: 90%;
@@ -1383,7 +1383,7 @@ body {
   transition: 200ms;
 }
 
-.footer__top__nav:hover::after, .footer__top__nav:focus::after {
+.footer__top__nav a:hover::after, .footer__top__nav a:focus::after {
   -webkit-transform: translateX(-50%) scaleY(1);
           transform: translateX(-50%) scaleY(1);
 }

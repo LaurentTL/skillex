@@ -18,8 +18,15 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
-            gap: 2rem 4rem;  
+            gap: 2rem 4rem;
 
+            a {
+                width: fit-content;
+                position: relative;
+                cursor: pointer;
+            }
+
+            @include hover-on-anchor(calc(2rem - 5px));
         }
 
         &__join {
@@ -50,19 +57,6 @@
         p {
             align-self: center;
         }
-
-        // p::before {
-        //     content: "";
-        //     display: block;
-        //     width: 3rem;
-        //     height: 3rem;
-        //     border-radius: 50%;
-        //     background-color: $black;
-        //     position: absolute;
-        //     top: 3rem;
-        //     left: 0;
-        //     transform: translateY(-50%);
-        // }
 
         .social-list {
 

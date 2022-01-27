@@ -58,24 +58,7 @@
                 cursor: pointer;
             }
 
-            a::after {
-                content: '';
-                display: block;
-                width: 90%;
-                height: 0.5rem;
-                background-color: $green;
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                z-index: -1;
-                transform: translateX(-50%) scaleY(0);
-                transform-origin: bottom;
-                transition: 200ms;
-            }
-
-            a:hover::after, a:focus::after {
-                transform: translateX(-50%) scaleY(1);
-            }
+            @include hover-on-anchor(0);
         }
 
         .btn-wrap {

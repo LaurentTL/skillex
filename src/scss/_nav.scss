@@ -86,6 +86,7 @@
                     span {
                         position: absolute;
                         z-index: 100;
+                        transition: 300ms;
                     }
 
                 @include hover-on-free-trial;

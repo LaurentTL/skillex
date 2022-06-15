@@ -309,6 +309,8 @@ body {
 .menu__right .btn-wrap .btn-trial span {
   position: absolute;
   z-index: 100;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .menu__right .btn-wrap .btn-trial::after {
@@ -320,8 +322,8 @@ body {
   background-color: #97c680;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
-  -webkit-transition: 200ms;
-  transition: 200ms;
+  -webkit-transition: 300ms;
+  transition: 300ms;
   border-radius: 50px;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
